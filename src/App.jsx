@@ -8,7 +8,7 @@ const MovieCard = ({ movie }) => {
     `https://image.tmdb.org/t/p/w500${movie.poster_path}`
     :
     'https://via.placeholder.com/500x750?text =No +Image';
-    
+
   return (
     <div className="movie-card">
       <img src={imageUr1} alt={movie.title} />
