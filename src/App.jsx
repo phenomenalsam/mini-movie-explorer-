@@ -5,16 +5,18 @@ import './App.css';
 // Movie Card Component
 const MovieCard = ({ movie }) => {
     const imageUr1 = movie.poster_path ?
-    `https://image.tmdb.org/t/p/w500${movie.poster_path}`
+    `https://image.omdb.org/t/p/w500${movie.poster_path}`
     :
     'https://via.placeholder.com/500x750?text =No +Image';
 
   return (
-    <div className="movie-card">
-      <img src={imageUr1} alt={movie.title} />
-      <h3>{movie.title}</h3>
-      <p>{movie.overview}</p>
-    </div>
+    <div className="bg-white text-black p-4
+     rounded-xl shadow-md w-60 m-4 
+     hover:scale-105 transition-transform
+      duration-300">
+  <h3 className="text-lg font-semibold 
+  mt-2">{movie.title}</h3>
+</div>
   );
 };
 
